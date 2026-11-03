@@ -1,10 +1,4 @@
-import { AppShell } from "@/components/AppShell";
-import { QcForm } from "@/components/QcForm";
+import { redirect } from "next/navigation";
 
-export default function QcPage() {
-  return (
-    <AppShell role="inspector" title="Pemeriksaan kualitas" description="Catat hasil pemeriksaan per batch sesuai standar yang disepakati. Anda hanya melihat transaksi yang ditugaskan kepada Anda.">
-      <QcForm />
-    </AppShell>
-  );
-}
+// Peran petugas lapangan dihapus: mutu dinilai AI dari foto dan checklist.
+export default function OldInspectorPage() { redirect("/demo"); }

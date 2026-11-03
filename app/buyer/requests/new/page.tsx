@@ -1,10 +1,16 @@
 import { AppShell } from "@/components/AppShell";
-import { RequestForm } from "@/components/RequestForm";
+import { PackageForm } from "@/components/buyer/PackageForm";
+import { PriceChart } from "@/components/buyer/PriceChart";
 
-export default function NewRequestPage() {
+export default function NewPackagePage() {
   return (
-    <AppShell role="buyer" title="Buat permintaan pembelian" description="Sampaikan kebutuhan Anda. Kelompok tani yang cocok akan menanggapi dengan penawaran.">
-      <RequestForm />
+    <AppShell role="buyer" title="Pesan paket pasokan" description="Tentukan grade, jumlah, dan tanggal. Sistem membagi pesanan ke petani terlatih terdekat, tanpa Anda memilih satu per satu.">
+      <PackageForm />
+      <section className="surface mt-8 p-6 lg:p-8">
+        <h2 className="text-xl font-semibold">Harga acuan cabai merah keriting, 7 hari terakhir</h2>
+        <p className="mb-4 mt-1 text-sm text-tanah-500">Per kilogram. Data ilustrasi, pada layanan nyata bersumber dari data resmi dan hasil pantauan tim.</p>
+        <PriceChart />
+      </section>
     </AppShell>
   );
 }

@@ -5,10 +5,9 @@ import { Logo } from "@/components/Logo";
 import { Badge } from "@/components/ui/badge";
 
 const roles = [
-  { href: "/buyer/requests/new", title: "Pembeli", text: "Tulis kebutuhan, bandingkan penawaran, dan setujui pesanan.", first: "Buat permintaan", start: true },
-  { href: "/farmer", title: "Kelompok tani", text: "Lihat permintaan yang cocok dan kirim penawaran dari HP.", first: "Papan permintaan" },
-  { href: "/inspector/qc/1", title: "Petugas lapangan", text: "Catat hasil pemeriksaan kualitas per batch.", first: "Form pemeriksaan" },
-  { href: "/admin", title: "Administrator", text: "Verifikasi akun dan pantau transaksi.", first: "Ringkasan" },
+  { href: "/buyer/requests/new", title: "Pembeli", text: "Pesan satu paket pasokan, lihat alokasi otomatis ke petani, dan bayar lewat escrow.", first: "Pesan paket pasokan", start: true },
+  { href: "/farmer/pelatihan", title: "Petani", text: "Belajar dan lulus kuis, isi stok panen, lalu terima pesanan dan foto hasil panen.", first: "Pelatihan wajib" },
+  { href: "/admin", title: "Administrator", text: "Verifikasi akun, tinjau sengketa mutu, dan pantau akurasi penilaian.", first: "Ringkasan" },
 ];
 
 export default function DemoPage() {
@@ -19,8 +18,8 @@ export default function DemoPage() {
         <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-t from-tanah-950/90 via-tanah-950/55 to-tanah-950/30" />
         <Link href="/" aria-label="Kembali ke beranda"><Logo tone="light" size="lg" /></Link>
         <div className="mt-16">
-          <h1 className="max-w-md text-4xl font-bold leading-tight text-white lg:text-5xl">Coba alur Argha Sasya dari empat sisi</h1>
-          <p className="mt-4 max-w-sm text-tanah-200">Satu transaksi kentang Granola, diikuti dari permintaan pembeli sampai pemeriksaan kualitas.</p>
+          <h1 className="max-w-md text-4xl font-bold leading-tight text-white lg:text-5xl">Coba alur Argha Sasya dari tiga sisi</h1>
+          <p className="mt-4 max-w-sm text-tanah-200">Satu paket 1 ton cabai merah keriting, diikuti dari pesanan pembeli sampai dana cair ke petani.</p>
         </div>
       </aside>
 

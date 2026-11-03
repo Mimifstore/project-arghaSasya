@@ -14,8 +14,8 @@ const ROLES: Record<RoleKey, { roleLabel: string; user: string; org: string; nav
   buyer: {
     roleLabel: "Portal pembeli", user: "Rina Kusumawati", org: "CV Dapur Nusantara",
     nav: [
-      { href: "/buyer/requests/new", label: "Buat permintaan", icon: "plus" },
-      { href: "/buyer/requests/1", label: "Penawaran masuk", icon: "inbox" },
+      { href: "/buyer/requests/new", label: "Pesan paket", icon: "plus" },
+      { href: "/buyer/requests/1", label: "Alokasi pasokan", icon: "inbox" },
       { href: "/orders/1", label: "Pesanan", icon: "receipt" },
     ],
   },

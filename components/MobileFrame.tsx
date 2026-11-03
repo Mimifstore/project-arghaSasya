@@ -9,7 +9,7 @@ export function MobileFrame({ children, className }: { children: React.ReactNode
         <span>09.41</span>
         <span className="flex items-center gap-1"><Signal className="h-3.5 w-3.5" /><Wifi className="h-3.5 w-3.5" /><BatteryFull className="h-4 w-4" /></span>
       </div>
-      <div className="h-[calc(100%-2.75rem)] overflow-y-auto pb-6">{children}</div>
+      <div className="h-[calc(100%-2.75rem)] overflow-y-auto">{children}</div>
       <div aria-hidden className="pointer-events-none absolute bottom-2 left-1/2 h-1 w-28 -translate-x-1/2 rounded-full bg-tanah-900/70" />
     </div>
   );
